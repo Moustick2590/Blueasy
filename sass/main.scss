@@ -1,0 +1,292 @@
+@font-face {
+    font-family: "bitter";
+    src: url("../fonts/bitter/Bitter-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/bitter/Bitter-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/bitter/Bitter-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/bitter/Bitter-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/bitter/Bitter-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/bitter/Bitter-Regular.woff2") format("woff2");
+    /* Modern Browsers */
+}
+
+$font-bitter: 'bitter';
+$primary-color: #4bcaff;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #515f67;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    header {
+        background-image: url(../image/back_header.jpg);
+        #navBar {
+            z-index: 1000;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1.3% 0 1.3% 0;
+            .active {
+                color: $primary-color;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $primary-color;
+                background-color: transparent !important;
+            }
+            a {
+                font-weight: 800;
+                font-size: 14px;
+                color: white;
+            }
+            h1 {
+                font-size: 30px;
+                span {
+                    color: $primary-color;
+                }
+            }
+            .nav-link:hover {
+                color: $primary-color;
+                border-style: solid;
+                border-width: 2px;
+                border-color: $primary-color;
+            }
+            .navbar-toggler {
+                color: rgba(0, 0, 0, .5);
+                border-color: rgba(0, 0, 0, .1);
+            }
+            .drop {
+                color: #515f67;
+            }
+            .drop:hover {
+                background-color: white
+            }
+        }
+        p {
+            color: white;
+            text-align: center;
+            padding: 27% 0 21% 0;
+            font-size: 42px;
+            span {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    main {
+        h2 {
+            font-size: 30px;
+            font-weight: 200;
+        }
+        section {
+            padding: 5% 0;
+        }
+        .undertitle {
+            margin-top: -1.7%;
+            margin-bottom: 2%;
+        }
+        #services {
+            color: white;
+            background-color: $primary-color;
+            .icone {
+                margin-bottom: 5%;
+            }
+        }
+        #portfolio {
+            color: #515f67;
+            background-color: white;
+            #titre_portfolio {
+                .btn {
+                    margin-top: 1.3%;
+                    background-color: white;
+                    font-size: 14px;
+                    font-weight: 800;
+                    
+                }
+                #under-portfolio {
+                    margin-top: -23%;
+                }
+                .btn.active {
+                    color: $primary-color;
+                    border-style: solid !important;
+                    border-width: 2px !important;
+                    border-color: $primary-color !important;
+                    background-color: transparent !important;
+                }
+                .btn:hover {
+                    color: $primary-color;
+                    border-style: solid;
+                    border-width: 2px;
+                    border-color: $primary-color;
+                    background-color: transparent !important;
+                }
+            }
+            #row1 {
+                margin-top: 5%;
+                padding-bottom: 1%;
+            }
+            #row2 {
+                padding: 1% 0 10% 0;
+            }
+            figure {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                line-height: 15rem;
+                padding: 0.5%;
+                display: none;
+                img {
+                    position: relative;
+                    z-index: 1;
+                    width: 95%;
+                    height: 95%;
+                }
+                
+            }
+            .show {
+                display: block;
+                figcaption {
+                    display: none;
+                    color: white;
+                    z-index: 2;
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+                    width: 91%;
+                    height: 91%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    text-align: center;
+                    font-size: 4em;
+                }
+            }
+            .show:hover figcaption {
+                display: block;
+            }
+            
+        }
+        #default_section {
+            color: white;
+            .undertitle {
+                margin-top: -6%;
+            }
+            p {
+                margin-bottom: 5%;
+            }
+            a {
+                color: white;
+            }
+            a:hover {
+                color: #353f46;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #353f46;
+            }
+            #video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        #twitter {
+            background-color: $primary-color;
+            color: white;
+            .undertitle {
+                margin-top: -23%;
+            }
+            a span {
+                display: block;
+                width: 3em;
+                height: 3em;
+                background-image: url('../image/twitter-blanc.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            p {
+                font-weight: 200;
+                font-size: 28px;
+            }
+        }
+        #who_is {
+            background-image: url('../image/back_whois.jpg');
+            color: white;
+            p {
+                font-size: 14px;
+                padding: 3% 0 3% 0;
+            }
+            i {
+                line-height: 2.7em;
+                color: white;
+                font-size: 1.7em;
+                text-align: center;
+                width: 13%;
+                height: 100%;
+                border: solid 2px white;
+                margin-right: 3%;
+            }
+        }
+        #testimonials {
+            background-color: white;
+            color: #515f67;
+            span {
+                font-family: $font-bitter;
+                font-size: 72px;
+                font-weight: 800;
+            }
+            p {
+                font-size: 28px;
+                font-weight: 200;
+            }
+            #sign {
+                color: #4bcaff;
+                font-size: 14px;
+                font-weight: 800;
+            }
+        }
+        #contact {
+            color: white;
+            font-size: 14px;
+            background-image: url('../image/back_contact.jpg');
+            background-size: cover;
+            p {
+                font-weight: 600;
+                margin-top: 4%;
+            }
+            form {
+                font-weight: 800;
+                .formulaire {
+                    background-color: transparent !important;
+                    border: solid 2px white;
+                    margin-bottom: 5%;
+                }
+                #fullname {
+                    padding: 3% 0;
+                }
+                #email {
+                    padding: 3% 0;
+                }
+                #valider {
+                    padding: 4% 0;
+                    width: 100%;
+                    font-weight: 800;
+                    color: white;
+                    background-color: #4bcaff;
+                    border: none;
+                }
+            }
+            #retour_php {
+                list-style-type: none;
+            }
+        }
+    }
+    footer {
+        background-color: #353f46;
+        color: #515f67;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 5% 0;
+        a {
+            color: #515f67;
+        }
+        a:hover {
+            color: white;
+        }
+    }
+}

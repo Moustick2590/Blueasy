@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "bitter";
+  src: url("../fonts/bitter/Bitter-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bitter/Bitter-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bitter/Bitter-Regular.otf") format("opentype"), url("../fonts/bitter/Bitter-Regular.ttf") format("truetype"), url("../fonts/bitter/Bitter-Regular.woff") format("woff"), url("../fonts/bitter/Bitter-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #515f67;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+body header {
+  background-image: url(../image/back_header.jpg);
+}
+body header #navBar {
+  z-index: 1000;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.3% 0 1.3% 0;
+}
+body header #navBar .active {
+  color: #4bcaff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4bcaff;
+  background-color: transparent !important;
+}
+body header #navBar a {
+  font-weight: 800;
+  font-size: 14px;
+  color: white;
+}
+body header #navBar h1 {
+  font-size: 30px;
+}
+body header #navBar h1 span {
+  color: #4bcaff;
+}
+body header #navBar .nav-link:hover {
+  color: #4bcaff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4bcaff;
+}
+body header #navBar .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+body header #navBar .drop {
+  color: #515f67;
+}
+body header #navBar .drop:hover {
+  background-color: white;
+}
+body header p {
+  color: white;
+  text-align: center;
+  padding: 27% 0 21% 0;
+  font-size: 42px;
+}
+body header p span {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body main h2 {
+  font-size: 30px;
+  font-weight: 200;
+}
+body main section {
+  padding: 5% 0;
+}
+body main .undertitle {
+  margin-top: -1.7%;
+  margin-bottom: 2%;
+}
+body main #services {
+  color: white;
+  background-color: #4bcaff;
+}
+body main #services .icone {
+  margin-bottom: 5%;
+}
+body main #portfolio {
+  color: #515f67;
+  background-color: white;
+}
+body main #portfolio #titre_portfolio .btn {
+  margin-top: 1.3%;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+body main #portfolio #titre_portfolio #under-portfolio {
+  margin-top: -23%;
+}
+body main #portfolio #titre_portfolio .btn.active {
+  color: #4bcaff;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: #4bcaff !important;
+  background-color: transparent !important;
+}
+body main #portfolio #titre_portfolio .btn:hover {
+  color: #4bcaff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4bcaff;
+  background-color: transparent !important;
+}
+body main #portfolio #row1 {
+  margin-top: 5%;
+  padding-bottom: 1%;
+}
+body main #portfolio #row2 {
+  padding: 1% 0 10% 0;
+}
+body main #portfolio figure {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  line-height: 15rem;
+  padding: 0.5%;
+  display: none;
+}
+body main #portfolio figure img {
+  position: relative;
+  z-index: 1;
+  width: 95%;
+  height: 95%;
+}
+body main #portfolio .show {
+  display: block;
+}
+body main #portfolio .show figcaption {
+  display: none;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 91%;
+  height: 91%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 4em;
+}
+body main #portfolio .show:hover figcaption {
+  display: block;
+}
+body main #default_section {
+  color: white;
+}
+body main #default_section .undertitle {
+  margin-top: -6%;
+}
+body main #default_section p {
+  margin-bottom: 5%;
+}
+body main #default_section a {
+  color: white;
+}
+body main #default_section a:hover {
+  color: #353f46;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #353f46;
+}
+body main #default_section #video {
+  width: 100%;
+  height: 100%;
+}
+body main #twitter {
+  background-color: #4bcaff;
+  color: white;
+}
+body main #twitter .undertitle {
+  margin-top: -23%;
+}
+body main #twitter a span {
+  display: block;
+  width: 3em;
+  height: 3em;
+  background-image: url("../image/twitter-blanc.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body main #twitter p {
+  font-weight: 200;
+  font-size: 28px;
+}
+body main #who_is {
+  background-image: url("../image/back_whois.jpg");
+  color: white;
+}
+body main #who_is p {
+  font-size: 14px;
+  padding: 3% 0 3% 0;
+}
+body main #who_is i {
+  line-height: 2.7em;
+  color: white;
+  font-size: 1.7em;
+  text-align: center;
+  width: 13%;
+  height: 100%;
+  border: solid 2px white;
+  margin-right: 3%;
+}
+body main #testimonials {
+  background-color: white;
+  color: #515f67;
+}
+body main #testimonials span {
+  font-family: "bitter";
+  font-size: 72px;
+  font-weight: 800;
+}
+body main #testimonials p {
+  font-size: 28px;
+  font-weight: 200;
+}
+body main #testimonials #sign {
+  color: #4bcaff;
+  font-size: 14px;
+  font-weight: 800;
+}
+body main #contact {
+  color: white;
+  font-size: 14px;
+  background-image: url("../image/back_contact.jpg");
+  background-size: cover;
+}
+body main #contact p {
+  font-weight: 600;
+  margin-top: 4%;
+}
+body main #contact form {
+  font-weight: 800;
+}
+body main #contact form .formulaire {
+  background-color: transparent !important;
+  border: solid 2px white;
+  margin-bottom: 5%;
+}
+body main #contact form #fullname {
+  padding: 3% 0;
+}
+body main #contact form #email {
+  padding: 3% 0;
+}
+body main #contact form #valider {
+  padding: 4% 0;
+  width: 100%;
+  font-weight: 800;
+  color: white;
+  background-color: #4bcaff;
+  border: none;
+}
+body main #contact #retour_php {
+  list-style-type: none;
+}
+body footer {
+  background-color: #353f46;
+  color: #515f67;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5% 0;
+}
+body footer a {
+  color: #515f67;
+}
+body footer a:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
